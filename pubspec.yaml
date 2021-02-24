@@ -1,0 +1,18 @@
+name: ip_address
+description: A flutter package to get the ip address
+version: 0.0.1
+author: Pradyot Prakash
+homepage: https://play.google.com/store/apps/developer?id=Pradyot+Prakash
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  http: ^0.12.2
+
+  data_connection_checker: ^0.3.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
