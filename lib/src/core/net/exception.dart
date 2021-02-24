@@ -1,14 +1,12 @@
 /// An exception class which will help in handling the exception if occurred.
 class IpAddressException implements Exception {
-  String message;
-  StackTrace stackTrace;
-
   IpAddressException(this.message) {
     stackTrace = StackTrace.current;
   }
 
+  String message;
+  StackTrace stackTrace;
+
   @override
-  String toString() {
-    return '$message';
-  }
+  String toString() => '$message';
 }

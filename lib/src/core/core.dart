@@ -3,6 +3,14 @@ import 'package:get_ip_address/src/core/net/net.dart';
 import 'package:get_ip_address/src/core/networking/network_request.dart';
 
 class Core {
+  /// The main ipAddress constructor which will be called to get the ipAddress.
+  ///
+  /// [requestType] : A request type which will change the response
+  /// type.
+  Core({this.requestType}) {
+    _networkRequest = NetworkRequest();
+  }
+
   /// Current version of this library.
   static String version = '1.0.0';
 
@@ -11,14 +19,6 @@ class Core {
 
   /// A network request handler which will help in finding the iP Address.
   NetworkRequest _networkRequest;
-
-  /// The main ipAddress constructor which will be called to get the ipAddress.
-  ///
-  /// [requestType] : A request type which will change the response
-  /// type.
-  Core({this.requestType}) {
-    _networkRequest = NetworkRequest();
-  }
 
   /// Get Ip address of the system based on [requestType].
   Future<dynamic> getIpAddress() async {

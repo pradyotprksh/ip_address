@@ -1,6 +1,6 @@
 name: get_ip_address
-description: A flutter package to get the ip address
-version: 0.0.1
+description: A package to get the ip address of the current device. This is currently supported on Android and iOS.
+version: 0.0.4
 homepage: https://github.com/pradyotprksh/ip_address
 
 environment:
@@ -8,9 +8,9 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  http: ^0.12.2
-
   data_connection_checker: ^0.3.4
+
+  http: ^0.12.2
 
 dev_dependencies:
   flutter_test:

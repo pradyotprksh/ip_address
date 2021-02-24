@@ -1,4 +1,4 @@
 library ip_address;
 
-export 'src/default.dart';
 export 'src/core.dart';
+export 'src/default.dart';

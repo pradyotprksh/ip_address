@@ -8,16 +8,16 @@ void main() {
   group('Check for Ip Address', () {
     setUp(() {
       ipStringAddress = IpAddress();
-      ipMapAddress = IpAddress(requestType: RequestType.json);
+      ipMapAddress = IpAddress(type: RequestType.json);
     });
 
     test('String Ip Address', () async {
-      var data = await ipStringAddress.getIpAddress();
+      dynamic data = await ipStringAddress.getIpAddress();
       expect(true, data is String);
     });
 
     test('Map Ip Address', () async {
-      var data = await ipMapAddress.getIpAddress();
+      dynamic data = await ipMapAddress.getIpAddress();
       expect(true, data is Map);
     });
   });

@@ -1,4 +1,4 @@
-# ip_address
+# get_ip_address
 
 A flutter package to get the system ip address
 
@@ -16,15 +16,15 @@ Then run,
 
 Add
 
-`var ipAddress = IpAddress(requestType: RequestType.json);`
+`var ipAddress = IpAddress(type: RequestType.json);`
 
-`requestType` is optional, default value is `RequestType.text`.
+`type` is optional, default value is `RequestType.text`.
 
 Now, to get the IpAddress
 
 `dynamic data = await ipAddress.getIpAddress();`
 
-So, depending on `requestType` the ipAddress will be given.
+So, depending on `type` the ipAddress will be given.
 
 The check for network connectivity is added. If any error occured it will throw
 
