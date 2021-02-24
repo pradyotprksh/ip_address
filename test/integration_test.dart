@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ip_address/ip_address.dart';
+import 'package:get_ip_address/get_ip_address.dart';
 
 void main() {
   IpAddress ipStringAddress;

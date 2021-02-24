@@ -1,4 +1,4 @@
-import 'package:ip_address/ip_address.dart';
+import 'package:get_ip_address/get_ip_address.dart';
 import 'package:http/http.dart' as http;
 
 /// A device handler which will handle all the remote related work like

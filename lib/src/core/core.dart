@@ -1,6 +1,6 @@
-import 'package:ip_address/ip_address.dart';
-import 'package:ip_address/src/core/net/net.dart';
-import 'package:ip_address/src/core/networking/network_request.dart';
+import 'package:get_ip_address/get_ip_address.dart';
+import 'package:get_ip_address/src/core/net/net.dart';
+import 'package:get_ip_address/src/core/networking/network_request.dart';
 
 class Core {
   /// Current version of this library.
