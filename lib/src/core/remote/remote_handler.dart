@@ -12,15 +12,15 @@ class RemoteHandler extends NetworkHandler {
   @override
   Future<String> getIpAddressText() async {
     try {
-      if (await Utility.isNetworkAvailable()) {
-        var response = await http.get('https://api64.ipify.org');
-        if (response.statusCode == 200) {
-          return response.body;
-        } else {
-          throw IpAddressException('Not able to find the Ip Address.');
-        }
+      var response = await http.get(
+        Uri.parse(
+          'https://api64.ipify.org',
+        ),
+      );
+      if (response.statusCode == 200) {
+        return response.body;
       } else {
-        throw IpAddressException('Internet Not Available');
+        throw IpAddressException('Not able to find the Ip Address.');
       }
     } catch (_) {
       throw IpAddressException('Not able to find the Ip Address.');

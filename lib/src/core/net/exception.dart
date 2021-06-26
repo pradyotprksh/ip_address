@@ -5,7 +5,7 @@ class IpAddressException implements Exception {
   }
 
   String message;
-  StackTrace stackTrace;
+  StackTrace? stackTrace;
 
   @override
   String toString() => '$message';

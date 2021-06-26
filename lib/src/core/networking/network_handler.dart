@@ -1,6 +1,5 @@
 /// The network handler which will handle all the data related work.
 abstract class NetworkHandler {
-
   /// Get IpAddress in text format.
   Future<String> getIpAddressText();
 

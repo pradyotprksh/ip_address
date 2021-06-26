@@ -1,9 +1,9 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:get_ip_address/get_ip_address.dart';
+import 'package:test/test.dart';
 
 void main() {
-  IpAddress ipStringAddress;
-  IpAddress ipMapAddress;
+  IpAddress? ipStringAddress;
+  IpAddress? ipMapAddress;
 
   group('Check for Ip Address', () {
     setUp(() {
@@ -12,12 +12,12 @@ void main() {
     });
 
     test('String Ip Address', () async {
-      dynamic data = await ipStringAddress.getIpAddress();
+      dynamic data = await ipStringAddress!.getIpAddress();
       expect(true, data is String);
     });
 
     test('Map Ip Address', () async {
-      dynamic data = await ipMapAddress.getIpAddress();
+      dynamic data = await ipMapAddress!.getIpAddress();
       expect(true, data is Map);
     });
   });

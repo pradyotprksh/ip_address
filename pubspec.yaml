@@ -1,17 +1,13 @@
 name: get_ip_address
-description: A package to get the ip address of the current device. This is currently supported on Android and iOS.
-version: 0.0.4
+description: A package to get the ip address of the current device. Uses https://api64.ipify.org to get the system IP.
+version: 0.0.5
 homepage: https://github.com/pradyotprksh/ip_address
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  data_connection_checker: ^0.3.4
-
-  http: ^0.12.2
+  http: ^0.13.3
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  test: any

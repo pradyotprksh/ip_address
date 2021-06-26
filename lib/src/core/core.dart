@@ -7,18 +7,20 @@ class Core {
   ///
   /// [requestType] : A request type which will change the response
   /// type.
-  Core({this.requestType}) {
+  Core({
+    required this.requestType,
+  }) {
     _networkRequest = NetworkRequest();
   }
 
   /// Current version of this library.
-  static String version = '1.0.0';
+  static String version = '0.0.5';
 
   /// The type of request.
   RequestType requestType;
 
   /// A network request handler which will help in finding the iP Address.
-  NetworkRequest _networkRequest;
+  late NetworkRequest _networkRequest;
 
   /// Get Ip address of the system based on [requestType].
   Future<dynamic> getIpAddress() async {

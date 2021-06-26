@@ -6,7 +6,9 @@ class IpAddress extends Core {
   /// [type] : An optional request type which will change the response
   /// type based on the [type] given by the user.
   /// Default value is [RequestType.text].
-  IpAddress({this.type = RequestType.text}) : super(requestType: type);
+  IpAddress({
+    this.type = RequestType.text,
+  }) : super(requestType: type);
 
   /// Current version of this library.
   static String version = Core.version;

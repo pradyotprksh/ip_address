@@ -7,7 +7,7 @@ class NetworkRequest extends NetworkHandler {
   }
 
   /// A remote handler which will handle the remote calls.
-  RemoteHandler _remoteHandler;
+  late RemoteHandler _remoteHandler;
 
   @override
   Future<Map<String, dynamic>> getIpAddressJson() async {
@@ -23,7 +23,7 @@ class NetworkRequest extends NetworkHandler {
   Future<String> getIpAddressText() async {
     try {
       return await _remoteHandler.getIpAddressText();
-    } catch(_) {
+    } catch (_) {
       throw IpAddressException('Not able to find the Ip Address.');
     }
   }

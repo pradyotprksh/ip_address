@@ -6,7 +6,7 @@ A flutter package to get the system ip address
 
 Add the dependency in your `pubspec.yaml` file
 
-`ip_address: 0.0.1`
+`ip_address: <version>`
 
 Then run,
 
@@ -26,6 +26,4 @@ Now, to get the IpAddress
 
 So, depending on `type` the ipAddress will be given.
 
-The check for network connectivity is added. If any error occured it will throw
-
-`IpAddressException`.
+If any error occurred it will throw `IpAddressException`.
